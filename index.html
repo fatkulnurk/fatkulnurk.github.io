@@ -12,7 +12,7 @@ Tolong Hargai Saya capek capek bikin *^_^*
 
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
 
-    <style>
+    <style type="text/css">
         body{
             background: #e3e3e3 url("images/bg.png");
             font-family: 'Arima Madurai', cursive;
@@ -28,6 +28,68 @@ Tolong Hargai Saya capek capek bikin *^_^*
             -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
             box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
         }
+        .is-40{
+            height: 128px;
+        }
+        .scale-up-hor-center {
+            -webkit-animation: scale-up-hor-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-hor-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+        .scale-up-top {
+            -webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
+            animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.4s both;
+        }
+
+        @-webkit-keyframes scale-up-hor-center {
+            0% {
+                -webkit-transform: scaleX(0.4);
+                transform: scaleX(0.4);
+            }
+            100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+        }
+        @keyframes scale-up-hor-center {
+            0% {
+                -webkit-transform: scaleX(0.4);
+                transform: scaleX(0.4);
+            }
+            100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+        }
+
+        @-webkit-keyframes scale-up-top {
+            0% {
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+                -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+            }
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+            }
+        }
+        @keyframes scale-up-top {
+            0% {
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+                -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+            }
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -74,10 +136,10 @@ Tolong Hargai Saya capek capek bikin *^_^*
                     </figure>
                 </div>
             </div>
-            <h1 class="title">
+            <h1 class="title scale-up-hor-center">
                 Fatkul Nur Koirudin
             </h1>
-            <h2 class="subtitle">
+            <h2 class="subtitle scale-up-top">
                 Backend Engineer \ SEO \ SysAdmin \ Scrum Master
             </h2>
         </div>
